@@ -91,7 +91,7 @@
                             </cursor>
                         </Label>
                         <Label layoutX="139.0" layoutY="10.0" text="Favourites" textFill="#d7d2d2">
-                            <font>
+                            <font> 
                                 <Font name="Ebrima" size="16.0" />
                             </font>
                             <HBox.margin>
