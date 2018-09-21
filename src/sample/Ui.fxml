@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
@@ -80,102 +82,38 @@
                         </ImageView>
                     </children>
                 </HBox>
-                <HBox alignment="CENTER" layoutX="10.0" layoutY="102.0">
-                    <children>
-                        <Label text="Recent" textFill="WHITE">
-                            <font>
-                                <Font name="Ebrima" size="16.0" />
-                            </font>
-                            <cursor>
-                                <Cursor fx:constant="HAND" />
-                            </cursor>
-                        </Label>
-                        <Label layoutX="139.0" layoutY="10.0" text="Favourites" textFill="#d7d2d2">
-                            <font> 
-                                <Font name="Ebrima" size="16.0" />
-                            </font>
-                            <HBox.margin>
-                                <Insets left="10.0" />
-                            </HBox.margin>
-                            <cursor>
-                                <Cursor fx:constant="HAND" />
-                            </cursor>
-                        </Label>
-                        <Label layoutX="160.0" layoutY="10.0" text="Online" textFill="#d7d2d2">
-                            <font>
-                                <Font name="Ebrima" size="16.0" />
-                            </font>
-                            <HBox.margin>
-                                <Insets left="10.0" />
-                            </HBox.margin>
-                            <cursor>
-                                <Cursor fx:constant="HAND" />
-                            </cursor>
-                        </Label>
-                    </children>
-                    <VBox.margin>
-                        <Insets top="5.0" />
-                    </VBox.margin>
-                </HBox>
-                <HBox alignment="CENTER_LEFT" styleClass="contact-list">
-                    <children>
-                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" styleClass="online-dot" />
-                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@../icons/profile.png" />
-                            </image>
-                        </ImageView>
-                        <VBox alignment="CENTER_LEFT">
-                            <children>
-                                <Label text="Mr. Jhone" textFill="WHITE">
-                                    <font>
-                                        <Font name="Arial Bold" size="14.0" />
-                                    </font>
-                                </Label>
-                                <Label layoutX="10.0" layoutY="52.0" text="Hello there, how are you" textFill="#f8f0f0">
-                                    <font>
-                                        <Font name="Calibri Light" size="14.0" />
-                                    </font>
-                                </Label>
-                            </children>
-                            <HBox.margin>
-                                <Insets left="5.0" />
-                            </HBox.margin>
-                        </VBox>
-                    </children>
-                    <VBox.margin>
-                        <Insets top="15.0" />
-                    </VBox.margin>
-                    <padding>
-                        <Insets left="10.0" />
-                    </padding>
-                </HBox>
-                <VBox prefHeight="68.0" prefWidth="300.0" VBox.vgrow="ALWAYS" />
+                <VBox prefHeight="184.0" prefWidth="300.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <JFXButton fx:id="btn1" onAction="#handlerButtonAction" prefHeight="30.0" prefWidth="300.0" text="MR. ONE" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="btn2" onAction="#handlerButtonAction" prefHeight="30.0" prefWidth="305.0" text="MS. TWO" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
                 <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="323.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="80.0" styleClass="profile" VBox.vgrow="NEVER">
                     <children>
-                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" styleClass="online-dot" />
-                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@../icons/profile.png" />
-                            </image>
-                        </ImageView>
-                        <VBox alignment="CENTER_LEFT">
-                            <children>
-                                <Label text="Mr. Jhone" textFill="WHITE">
-                                    <font>
-                                        <Font name="Arial Bold" size="14.0" />
-                                    </font>
-                                </Label>
-                                <Label layoutX="10.0" layoutY="52.0" text="Hello there, how are you" textFill="#f8f0f0">
-                                    <font>
-                                        <Font name="Calibri Light" size="14.0" />
-                                    </font>
-                                </Label>
-                            </children>
-                            <HBox.margin>
-                                <Insets left="5.0" />
-                            </HBox.margin>
-                        </VBox>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/search.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="231.0" style="-fx-background-color: transparent; -fx-prompt-text-fill: #E4E2E4;" text="Find friends">
+                     <font>
+                        <Font name="Calibri Light" size="14.0" />
+                     </font>
+                  </TextField>
                     </children>
                     <padding>
                         <Insets left="10.0" />
@@ -188,179 +126,242 @@
         </VBox>
         <VBox layoutX="300.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="570.0" prefWidth="724.0">
             <children>
-                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="724.0" styleClass="profile-2">
-                    <children>
-                        <Label layoutX="9.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" styleClass="online-dot" />
-                        <ImageView fitHeight="72.0" fitWidth="73.0" layoutX="29.0" layoutY="15.0" pickOnBounds="true" smooth="false">
-                            <image>
-                                <Image url="@../icons/avatarUser.png" />
-                            </image>
-                        </ImageView>
-                        <Label layoutX="102.0" layoutY="26.0" text="The Rock">
-                            <font>
-                                <Font name="Ebrima" size="18.0" />
-                            </font>
-                        </Label>
-                        <Label layoutX="105.0" layoutY="47.0" text="Hard as hell.">
-                            <font>
-                                <Font name="Calibri Light" size="14.0" />
-                            </font>
-                        </Label>
-                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="187.0" layoutY="35.0" pickOnBounds="true" smooth="false">
-                            <image>
-                                <Image url="@../icons/star.png" />
-                            </image>
-                        </ImageView>
-                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="564.0" layoutY="24.0" pickOnBounds="true" smooth="false">
-                            <image>
-                                <Image url="@../icons/phone.png" />
-                            </image>
-                        </ImageView>
-                        <ImageView fitHeight="44.0" fitWidth="49.0" layoutX="614.0" layoutY="27.0" pickOnBounds="true" smooth="false">
-                            <image>
-                                <Image url="@../icons/video-call.png" />
-                            </image>
-                        </ImageView>
-                        <ImageView fitHeight="56.0" fitWidth="47.0" layoutX="663.0" layoutY="19.0" pickOnBounds="true" smooth="false">
-                            <image>
-                                <Image url="@../icons/dots.png" />
-                            </image>
-                        </ImageView>
-                    </children>
-                </Pane>
-                <HBox alignment="CENTER_LEFT">
-                    <children>
-                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
-                            <image>
-                                <Image url="@../icons/avatarUser.png" />
-                            </image>
-                        </ImageView>
-                        <VBox alignment="CENTER_LEFT">
-                            <children>
-                                <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="382.0" styleClass="message-box" text="Hello there whats going on there?" textFill="#434343">
-                                    <padding>
-                                        <Insets left="10.0" />
-                                    </padding>
-                                    <font>
-                                        <Font size="14.0" />
-                                    </font>
-                                </Label>
-                                <Label text="10:11">
-                                    <font>
-                                        <Font name="Calibri Light" size="14.0" />
-                                    </font>
-                                    <VBox.margin>
-                                        <Insets top="5.0" />
-                                    </VBox.margin>
-                                </Label>
-                            </children>
-                            <HBox.margin>
-                                <Insets left="10.0" />
-                            </HBox.margin>
-                        </VBox>
-                    </children>
-                    <padding>
-                        <Insets left="10.0" />
-                    </padding>
-                    <VBox.margin>
-                        <Insets top="10.0" />
-                    </VBox.margin>
-                </HBox>
-                <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="110.0">
-                    <children>
-                        <VBox alignment="CENTER_RIGHT">
-                            <children>
-                                <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="382.0" styleClass="message-box" text="Hello there whats going on there?" textFill="#00a6ff">
-                                    <padding>
-                                        <Insets left="10.0" />
-                                    </padding>
-                                    <font>
-                                        <Font size="14.0" />
-                                    </font>
-                                </Label>
-                                <Label text="10:15">
-                                    <font>
-                                        <Font name="Calibri Light" size="14.0" />
-                                    </font>
-                                    <VBox.margin>
-                                        <Insets top="5.0" />
-                                    </VBox.margin>
-                                </Label>
-                            </children>
-                            <HBox.margin>
-                                <Insets right="10.0" />
-                            </HBox.margin>
-                        </VBox>
-                    </children>
-                    <padding>
-                        <Insets left="10.0" />
-                    </padding>
-                </HBox>
-                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="110.0">
-                    <children>
-                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
-                            <image>
-                                <Image url="@../icons/avatarUser.png" />
-                            </image>
-                        </ImageView>
-                        <VBox alignment="CENTER_LEFT">
-                            <children>
-                                <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="382.0" styleClass="message-box" text="Hello there whats going on there?" textFill="#434343">
-                                    <padding>
-                                        <Insets left="10.0" />
-                                    </padding>
-                                    <font>
-                                        <Font size="14.0" />
-                                    </font>
-                                </Label>
-                                <Label text="10:18">
-                                    <font>
-                                        <Font name="Calibri Light" size="14.0" />
-                                    </font>
-                                    <VBox.margin>
-                                        <Insets top="5.0" />
-                                    </VBox.margin>
-                                </Label>
-                            </children>
-                            <HBox.margin>
-                                <Insets left="10.0" />
-                            </HBox.margin>
-                        </VBox>
-                    </children>
-                    <padding>
-                        <Insets left="10.0" />
-                    </padding>
-                </HBox>
-                <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="187.0" prefHeight="161.0" prefWidth="724.0">
-                    <children>
-                        <VBox alignment="CENTER_RIGHT">
-                            <children>
-                                <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="382.0" styleClass="message-box" text="Hello there whats going on there?" textFill="#00a6ff">
-                                    <padding>
-                                        <Insets left="10.0" />
-                                    </padding>
-                                    <font>
-                                        <Font size="14.0" />
-                                    </font>
-                                </Label>
-                                <Label text="10:21">
-                                    <font>
-                                        <Font name="Calibri Light" size="14.0" />
-                                    </font>
-                                    <VBox.margin>
-                                        <Insets top="5.0" />
-                                    </VBox.margin>
-                                </Label>
-                            </children>
-                            <HBox.margin>
-                                <Insets right="10.0" />
-                            </HBox.margin>
-                        </VBox>
-                    </children>
-                    <padding>
-                        <Insets left="10.0" />
-                    </padding>
-                </HBox>
+            <AnchorPane>
+               <children>
+                  <Pane fx:id="conversation2" layoutX="10.0" layoutY="10.0" prefHeight="470.0" prefWidth="724.0" style="-fx-background-color: #505050;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="724.0" style="-fx-background-color: #ffffff;" styleClass="profile-2">
+                           <children>
+                              <ImageView fitHeight="72.0" fitWidth="73.0" layoutX="29.0" layoutY="15.0" pickOnBounds="true" smooth="false">
+                                 <image>
+                                    <Image url="@../icons/avatarUser.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="friendName1" layoutX="115.0" layoutY="37.0" text="MR. TWO TWO TWO">
+                                 <font>
+                                    <Font name="Ebrima" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="2.0" layoutY="39.0" pickOnBounds="true" smooth="false">
+                                 <image>
+                                    <Image url="@../icons/star.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="564.0" layoutY="24.0" pickOnBounds="true" smooth="false">
+                                 <image>
+                                    <Image url="@../icons/phone.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="44.0" fitWidth="49.0" layoutX="614.0" layoutY="27.0" pickOnBounds="true" smooth="false">
+                                 <image>
+                                    <Image url="@../icons/video-call.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="56.0" fitWidth="47.0" layoutX="663.0" layoutY="19.0" pickOnBounds="true" smooth="false">
+                                 <image>
+                                    <Image url="@../icons/dots.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <HBox alignment="CENTER_LEFT" layoutY="110.0">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
+                                 <image>
+                                    <Image url="@../icons/avatarUser.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="382.0" styleClass="message-box" text="Hello there whats going on there?" textFill="#434343">
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="10:11">
+                                       <font>
+                                          <Font name="Calibri Light" size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="conversation1" prefHeight="470.0" prefWidth="724.0" style="-fx-background-color: #505050;">
+                     <children>
+                            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="724.0" style="-fx-background-color: #ffffff;" styleClass="profile-2">
+                                <children>
+                                    <ImageView fitHeight="72.0" fitWidth="73.0" layoutX="29.0" layoutY="15.0" pickOnBounds="true" smooth="false">
+                                        <image>
+                                            <Image url="@../icons/avatarUser.png" />
+                                        </image>
+                                    </ImageView>
+                                    <Label fx:id="friendName" layoutX="115.0" layoutY="37.0" text="MR. ONE">
+                                        <font>
+                                            <Font name="Ebrima" size="18.0" />
+                                        </font>
+                                    </Label>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="2.0" layoutY="39.0" pickOnBounds="true" smooth="false">
+                                        <image>
+                                            <Image url="@../icons/star.png" />
+                                        </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="564.0" layoutY="24.0" pickOnBounds="true" smooth="false">
+                                        <image>
+                                            <Image url="@../icons/phone.png" />
+                                        </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="44.0" fitWidth="49.0" layoutX="614.0" layoutY="27.0" pickOnBounds="true" smooth="false">
+                                        <image>
+                                            <Image url="@../icons/video-call.png" />
+                                        </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="56.0" fitWidth="47.0" layoutX="663.0" layoutY="19.0" pickOnBounds="true" smooth="false">
+                                        <image>
+                                            <Image url="@../icons/dots.png" />
+                                        </image>
+                                    </ImageView>
+                                </children>
+                            </Pane>
+                            <HBox alignment="CENTER_LEFT" layoutY="110.0">
+                                <children>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
+                                        <image>
+                                            <Image url="@../icons/avatarUser.png" />
+                                        </image>
+                                    </ImageView>
+                                    <VBox alignment="CENTER_LEFT">
+                                        <children>
+                                            <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="382.0" styleClass="message-box" text="Hello there whats going on there?" textFill="#434343">
+                                                <padding>
+                                                    <Insets left="10.0" />
+                                                </padding>
+                                                <font>
+                                                    <Font size="14.0" />
+                                                </font>
+                                            </Label>
+                                            <Label text="10:11">
+                                                <font>
+                                                    <Font name="Calibri Light" size="14.0" />
+                                                </font>
+                                                <VBox.margin>
+                                                    <Insets top="5.0" />
+                                                </VBox.margin>
+                                            </Label>
+                                        </children>
+                                        <HBox.margin>
+                                            <Insets left="10.0" />
+                                        </HBox.margin>
+                                    </VBox>
+                                </children>
+                                <padding>
+                                    <Insets left="10.0" />
+                                </padding>
+                            </HBox>
+                        <HBox layoutX="309.0" layoutY="187.0">
+                           <children>
+                              <VBox alignment="BOTTOM_RIGHT">
+                                 <children>
+                                            <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="382.0" styleClass="message-box" text="Hello there whats going on there?" textFill="#00a6ff">
+                                                <padding>
+                                                    <Insets left="10.0" />
+                                                </padding>
+                                                <font>
+                                                    <Font size="14.0" />
+                                                </font>
+                                            </Label>
+                                            <Label text="10:15">
+                                                <font>
+                                                    <Font name="Calibri Light" size="14.0" />
+                                                </font>
+                                            </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                            <HBox alignment="CENTER_LEFT" layoutY="264.0">
+                                <children>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
+                                        <image>
+                                            <Image url="@../icons/avatarUser.png" />
+                                        </image>
+                                    </ImageView>
+                                    <VBox alignment="CENTER_LEFT">
+                                        <children>
+                                            <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="382.0" styleClass="message-box" text="Hello there whats going on there?" textFill="#434343">
+                                                <padding>
+                                                    <Insets left="10.0" />
+                                                </padding>
+                                                <font>
+                                                    <Font size="14.0" />
+                                                </font>
+                                            </Label>
+                                            <Label text="10:18">
+                                                <font>
+                                                    <Font name="Calibri Light" size="14.0" />
+                                                </font>
+                                                <VBox.margin>
+                                                    <Insets top="5.0" />
+                                                </VBox.margin>
+                                            </Label>
+                                        </children>
+                                        <HBox.margin>
+                                            <Insets left="10.0" />
+                                        </HBox.margin>
+                                    </VBox>
+                                </children>
+                                <padding>
+                                    <Insets left="10.0" />
+                                </padding>
+                            </HBox>
+                            <HBox alignment="CENTER_RIGHT" layoutY="341.0" prefHeight="130.0" prefWidth="724.0">
+                                <children>
+                                    <VBox alignment="CENTER_RIGHT">
+                                        <children>
+                                            <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="382.0" styleClass="message-box" text="Hello there whats going on there?" textFill="#00a6ff">
+                                                <padding>
+                                                    <Insets left="10.0" />
+                                                </padding>
+                                                <font>
+                                                    <Font size="14.0" />
+                                                </font>
+                                            </Label>
+                                            <Label text="10:21">
+                                                <font>
+                                                    <Font name="Calibri Light" size="14.0" />
+                                                </font>
+                                                <VBox.margin>
+                                                    <Insets top="5.0" />
+                                                </VBox.margin>
+                                            </Label>
+                                        </children>
+                                        <HBox.margin>
+                                            <Insets right="10.0" />
+                                        </HBox.margin>
+                                    </VBox>
+                                </children>
+                                <padding>
+                                    <Insets left="10.0" />
+                                </padding>
+                            </HBox>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
                 <Pane layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="724.0" styleClass="board" VBox.vgrow="ALWAYS">
                     <children>
                         <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="510.0" layoutY="33.0" pickOnBounds="true" smooth="false">
@@ -387,11 +388,6 @@
                                 <Cursor fx:constant="HAND" />
                             </cursor>
                         </ImageView>
-                        <TextField layoutX="14.0" layoutY="23.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="329.0" style="-fx-background-color: transparent; -fx-prompt-text-fill: #E4E2E4;" text="Type your message here!">
-                            <font>
-                                <Font name="Calibri Light" size="14.0" />
-                            </font>
-                        </TextField>
                         <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="630.0" layoutY="33.0" pickOnBounds="true" smooth="false">
                             <image>
                                 <Image url="@../icons/user-02.png" />
@@ -408,6 +404,16 @@
                                 <Cursor fx:constant="HAND" />
                             </cursor>
                         </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="73.0" layoutX="454.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/sendbtn.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField layoutX="14.0" layoutY="30.0" prefHeight="40.0" prefWidth="432.0" promptText="Type something interesting...">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
                     </children>
                 </Pane>
             </children>
@@ -429,6 +435,11 @@
                         <Font name="System Bold" size="12.0" />
                     </font>
                 </Label>
+            <Label layoutX="939.0" layoutY="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimize" prefHeight="10.0" prefWidth="10.0" styleClass="max-btn" text="_">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
             </children>
         </Pane>
     </children>

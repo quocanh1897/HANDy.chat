@@ -3,12 +3,15 @@ package sample;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import com.jfoenix.controls.JFXButton;
+import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class UiController implements Initializable {
@@ -19,6 +22,10 @@ public class UiController implements Initializable {
     @FXML
     private AnchorPane parent;
 
+    @FXML
+    private Pane conversation1, conversation2;
+    @FXML
+    private JFXButton btn1, btn2;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         makeStageDrageable();
@@ -56,6 +63,15 @@ public class UiController implements Initializable {
 
     @FXML
     private void maximize(MouseEvent event) {
+    }
+
+    @FXML
+    private void handlerButtonAction(ActionEvent event){
+        if(event.getSource() == btn1){
+            conversation1.toFront();
+        }else if(event.getSource() == btn2){
+            conversation2.toFront();
+        }
     }
 
     @FXML
