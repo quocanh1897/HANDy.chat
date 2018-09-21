@@ -1,0 +1,72 @@
+.parent{
+    -fx-background-color: #ffffff;
+}
+.sidebar{
+    -fx-background-color: #30ACF3;
+}
+.top{
+   -fx-background-color: #E4E2E4;
+}
+
+.close-btn{
+    -fx-background-color: #FC5653;
+    -fx-background-radius: 0%;
+}
+.close-btn:hover{
+    -fx-background-color: red;
+    -fx-background-radius: 100%;
+}
+
+.min-btn{
+    -fx-background-color: #29CC41;
+    -fx-background-radius: 100%;
+}
+.min-btn:hover{
+    -fx-background-color: green;
+    -fx-background-radius: 100%;
+}
+
+.max-btn{
+    -fx-background-color: #FDBC40;
+    -fx-background-radius: 100%;
+}
+.max-btn:hover{
+    -fx-background-color: yellow;
+    -fx-background-radius: 100%;
+}
+
+.online-dot{
+    -fx-background-color: #6BE005;
+    -fx-background-radius: 100%;
+}
+
+.contact-list{
+    -fx-background-color: transparent;
+}
+.contact-list:hover{
+    -fx-background-color: #0093E9;
+}
+
+.profile{
+    -fx-background-color: transparent;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px 0px 0px 0px;
+    -fx-border-style: solid;
+}
+.profile-2{
+    -fx-background-color: transparent;
+    -fx-border-color: #E4E2E4;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-style: solid;
+}
+.board{
+    -fx-background-color: transparent;
+    -fx-border-color: #E4E2E4;
+    -fx-border-width: 1px 0px 0px 0px;
+    -fx-border-style: solid;
+}
+
+.message-box{
+    -fx-background-color: #F5F5F5;
+    -fx-background-radius: 10px;
+}
