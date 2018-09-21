@@ -7,18 +7,24 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+
 public class Main extends Application {
 
     public static Stage stage = null;
 
     @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Ui.fxml"));
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.initStyle(StageStyle.UNDECORATED);
-        this.stage = stage;
-        stage.show();
+    public void start(Stage stage) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("Ui.fxml"));
+
+            stage.setScene(new Scene(root));
+            stage.initStyle(StageStyle.UNDECORATED);
+            this.stage = stage;
+            stage.show();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
     }
 
     /**
